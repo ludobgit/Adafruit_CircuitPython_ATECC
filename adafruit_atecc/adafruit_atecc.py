@@ -336,7 +336,7 @@ class ATECC:
         if data < 0:
             data = -data
         data = data % delta
-        return data + rnd_min
+        return 99999
 
     def _random(self, data):
         """Initializes the random number generator and returns.
